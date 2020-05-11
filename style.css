@@ -71,20 +71,6 @@ a {
     border-style: solid;
     border-color: #e0ecfa;
 }
-#indent-text {
-    padding: 20px;
-}
-
-
-column {
-    padding: 1em;
-    -moz-column-count: 1;
-    -moz-column-gap: 1em;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 1em;
-    column-count: 1;
-    column-gap: 1em;
-}
 footer {
     position: fixed;
     bottom: 0;
@@ -96,4 +82,25 @@ footer {
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.projects {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #397fa7;
+    clear: both;
+    margin-bottom: 20px;
+}
+.projects h2 {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+}
+table {
+    text-align: left;
+    width: 100%;
 }
