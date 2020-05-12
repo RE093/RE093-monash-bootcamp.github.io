@@ -1,8 +1,5 @@
 * {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-           
+    box-sizing: border-box;        
   }
 
 body {
@@ -12,6 +9,7 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 0;
+    line-height: 1.5;
 }
 header {
     position: fixed;
@@ -24,9 +22,11 @@ header {
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 10px;
 }
 h1 {
-    font-style: 28px;
+    font-size: 28px;
+    font-weight: bold;
     color: #eee;
     text-align: center;
     margin: 0;
@@ -34,13 +34,32 @@ h1 {
     padding-bottom: 20px;
 
 }
+
 h2 {
     font-size: 24px;
-    padding-left: 20px;
+    font-weight: bold;
 }
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+}
+
 a {
     color: #016fff;
 }
+
+p {
+    font-style: italic;
+} 
+
+span {
+    display: block;
+    position: relative;
+    padding-top: 40px;
+}
+
 .container {
     width: 1024px;
     margin: 0 auto;
@@ -57,23 +76,22 @@ a {
     width: auto;
     height: 344px;
     margin-right: 20px;
+    border-radius: 50px;
 }
 #left-section {
-    width: 70%;
+    display: block;
+    width: 65%;
     margin-bottom: 50px;
     height: 350px;
-    border-style: solid;
-    border-color: #e0ecfa;
 }
 #middle-section {
+    display: block;
+    float: right;
     width: 30%;
     line-height: 150%;
     height: 350px;
-    margin-bottom: 50px;
-    border-style: solid;
-    border-color: #e0ecfa;
+    margin-top: 0px;
 }
-
 .projects {
     position: relative;
     width: 100%;
@@ -82,6 +100,7 @@ a {
     background-color: #006dac;
     clear: both;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 .projects h2 {
     color: white;
@@ -89,20 +108,27 @@ a {
     text-decoration: none;
     display: inline-block;
     margin: 25px;
+
 }
+
 table {
+    margin-top: 20px;
     text-align: left;
     width: 100%;
 }
 th {
     background-color: #cfe2f8;
     height: 40px;
-    text-align: center;
+    text-align: left;
+    padding: 7px;
+    border: 1px solid #e0ecfa;
 }
 td {
     background-color: #e9f0f8;
     height: 30px;
     text-decoration: none;
+    padding: 5px;
+    border: 1px solid #e0ecfa;
 }
 
 footer {
