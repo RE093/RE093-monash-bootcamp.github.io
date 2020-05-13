@@ -47,7 +47,7 @@ header {
 
 header h1 {
     display: inline-block;
-    font-size: 72px;
+    font-size: 90px;
     font-weight: bold;
     color: lightgrey;
     text-align: left;
@@ -146,14 +146,15 @@ a {
     width: 100%;
 }
 th {
-    background-color: #cfe2f8;
+    background-color: #016fff;
     height: 50px;
     text-align: left;
     font-weight: bolder;
-    color: rgb(58, 57, 57);
+    color: white;
     padding-left: 5px;
     padding-top: 12px;
     border: 1px solid white;
+    border-radius: 5px;
 }
 td {
     background-color: #f8fafc;
@@ -161,6 +162,7 @@ td {
     text-decoration: none;
     padding: 5px;
     border: 1px solid white;
+    border-radius: 5px;
 }
 
 td a {
