@@ -1,96 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Head -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RE Bio</title>
-        <link rel="icon" href="Assets/Logo's/fire.svg" sizes="16x16" type="image/svg">
 
-        <link rel="stylesheet" type="text/css" href="style/reset.css">
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-        
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupert Paterson</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/style/style.css" />
+  </head>
 
-    <!-- Body -->
-    <body>
-        
-        <!-- Header -->
-        <header><h1>RUPERT <span>PATERSON</span></h1>
-            <img src="Assets/re-face.png" alt="Rupert's face" id="face"/>
-            <p>Re.paterson000@gmail.com</p>
-        </header>
-        
-        <!-- Navigation -->
-        <table id="nav">
-            <tr>
-                <th id="nav-space">
-                    <section id="contact">
-                        <a target="_blank" href="https://www.linkedin.com/in/rupert-paterson-2b2b02165/"><img id= "linkedin" src="Assets/Logo's/linkedin.svg"/></a>
-                        <a target="_blank" href="https://github.com/RE093"><img id= "github" src="Assets/Logo's/github-blue.png"/></a>
-                    </section>
-                </th>
-                <th class="nav-bar"><a id="about" href="#aboutme">About me</a></th>
-                <th class="nav-bar"><a id="project" href="index.html/.projects">Projects</a></th>
-                <th class="nav-bar"><a id="goal" href="#goals">Goals</a></th>
-            </tr>
-        </table>
-
-        <!-- Main Content -->
-        <div class="container">
-
-            <!-- Introduction -->
-            <section id="intro">
-                <h3>A bit about me</h3>
-                <br>
-                <p id="column"> Hi, I'm Rupert, I am an ex-army diesel mechanic turned UX-design/ Full-Stack developer, always looking for a challenge and thriving in the process of solving the puzzle. I moved to Melbourne seeking a new adventure and a new lifestyle.
-                    I think it is fair to say I got it. I am looking forward exploring Australia once all this Covid-19 business is over and seeing everything this country has to offer, while figuring out what I can offer in return.
-                </p>
-                <p>I am into all things outdoors, I have spent a fair amount of time sleeping under the stars and like to do so every so often to reflect on life. I am/ was a bit of a runner, I enjoy incorporating running into my everyday
-                    life. I have run a marathon, numerous halfs and a half-Ironman with the goal being to complete a full before life's end. I also have a major passion for cars and anything mechanical, having spent most of my years so far 
-                    working on one of the many many "future classics" I have owned, trying to make them go faster in one form or another.
-                </p>
-            </section>        
-           
-            <!-- Monash Projects -->
-            <section id="projects">
-                <h3>Monash Bootcamp Projects</h3>
-                <br>
-                <table id="monash">
-                    <tr>
-                        <th>Week</th>
-                        <th>Activity 1</th>
-                        <th>Activity 2</th>
-                        <th>Activity 3</th>
-                        <th>Homework</th>
-                        <th>For Fun</th>
-                    </tr>
-                    <tr>
-                        <td>1.</td>
-                        <td><a target="blank" href="https://re093.github.io/MU_my-first-page_W1_CA1">My First Page</a></td>
-                        <td><a target="blank" href="https://re093.github.io/MU_floats_W1_CA2">Floats</a></td>
-                        <td><a target="blank" href="https://re093.github.io/MU_css-positioning_W1_CA3">CSS Positioning</a></td>
-                        <td><a target="blank" href="https://re093.github.io/RPaterson_Refactor_HW1/">Refactor Project</a></td>
-                        <td><a target="blank" href="https://scratch.mit.edu/projects/389362180/">A Game of Cat and Mouse</a></td>
-                    </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td><a target="blank" href="https://re093.github.io/MU_tigers_W2_CA1/">Tigers</a></td>
-                        <td><a target="blank" href="https://re093.github.io/MU_Typography_W2_CA2/">Typography</a></td>
-                        <td><a target="blank" href="https://re093.github.io/MU_Pseudo-Classes_W2_CA3/">Pseudo Classes</a></td>
-                        <td><a target="blank" href="https://re093.github.io/MU_RPaterson_Bootstrap_HW2/">Bootstrap Project</a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>3.</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a target="blank" href="https://re093.github.io/MU_RPaterson_PasswordGenerator_HW3/">Password Generator Project</a></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </section>
+  <body>
+    <div class="scene">
+      <div class="carousel">
+        <!-- About Me -->
+        <div class="carousel__cell about">ABOUT
+          <section class="about-text">
+            <img class="about-image" alt="Rupert's face" src="Assets/images/re-face2.png">
+            <h1>
+              RUPERT
+              <br>
+              <span>PATERSON</span>
+            </h1>
+            <p>
+              I am a full-stack developer and UI/UX designer.
+              <br>
+              I do not just stop at learning one element, I strive to learn the entirety of a product development process.
+              Currently I am doing a coding bootcamp through Monash University and a UX bootcamp through PeakXD.
+              <br>
+              With a background of seven years in the New Zealand Army as a heavy diesel mechanic, I developed a tenacity
+              for hard work and determination,
+              which I use to full effect when learning new skills.
+              My passion for problem solving has taught me to never shy away from a challenge, to learn new skills and
+              build on those I already had.
+              Skills like team building, communication and public speaking all became second nature after being put in
+              high pressure situations in my profession this far.
+            </p>
+            <button type="button" class="read-more btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Read
+              More</button>
+          </section>
         </div>
-    </body>
-</html> 
+        <!-- Contact -->
+        <div class="carousel__cell contact">CONTACT
+          <section class="contact-form">
+            <span><a target="_blank" href="https://www.linkedin.com/in/rupert-paterson-2b2b02165/"><img id="linkedin"
+                  src="Assets/images/linkedin.png" alt="linkedin link" /></a></span>
+            <span><a target="_blank" href="https://github.com/RE093"><img id="github" src="Assets/images/github.png"
+                  alt="github Link" /></a></span>
+            <form>
+              <div action="mailto:rupert.rotary@gmail.com" method="post" enctype="text/plain"
+                class="form-group input-form">
+                <label class="form-title">Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group input-form">
+                <label class="form-title">Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group input-form">
+                <label class="form-title">Message</label>
+                <textarea type="text" class="form-control" rows="5"></textarea>
+              </div>
+              <button class="btn btn-primary submit-form" type="submit">Submit</button>
+            </form>
+          </section>
+        </div>
+        <!-- Portfolio -->
+        <div class="carousel__cell portfolio">PORTFOLIO
+          <section class="portfolio-cards">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm row-one">
+                  <div class="card">
+                    <img src="Assets/images/planner.png" class="card-img-top" alt="work day scheduler screenshot">
+                    <div class="card-body">
+                      <h5 class="card-title">Work Day Scheduler</h5>
+                      <p class="card-text">A simple work day scheduler to plan your day. you can add any text,
+                        save it, its gives you current time and date and where that is on the scheduler.
+                      </p>
+                      <a target="_blank" href="https://re093.github.io/HW5_RPaterson_WorkDayScheduler/"
+                        class="btn btn-primary view-one">View</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm row-two">
+                  <div class="card">
+                    <img src="Assets/images/project-one.png" class="card-img-top" alt="a better time screenshot">
+                    <div class="card-body">
+                      <h5 class="card-title">A Better Time</h5>
+                      <p class="card-text">A Better Time gives the user options for what to do on a date night, the first
+                        project,
+                        utilizing github to co-locate files to effectively work with a team of four.
+                      </p>
+                      <a target="_blank" href="https://re093.github.io/a-better-time/"
+                        class="btn btn-primary view-two">View</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm row-three">
+                  <div class="card">
+                    <img src="Assets/images/weather-dash.png" class="card-img-top" alt="weather dashboard screenshot">
+                    <div class="card-body">
+                      <h5 class="card-title">Weather Dashboard</h5>
+                      <p class="card-text">The weather dashboard uses the weather API to give current weather status in
+                        the city you choose,
+                        it saves your history and gives you a five day weather forecast.
+                      </p>
+                      <a target="_blank" href="https://re093.github.io/HW6_MU_RPaterson_Weather-Dashboard/"
+                        class="btn btn-primary view-three">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Next/ Previous -->
+    <p style="text-align: center;">
+      <button class="previous-button btn btn-dark">Previous</button>
+      <button class="next-button btn btn-dark">Next</button>
+    </p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="staticBackdropLabel">RUPERT PATERSON</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Profile</h4>
+            <img src="Assets/images/re-mountain.jpeg" class="about-imageTwo" alt="rupert on mount oberon">
+            <p>
+              I have spent the majority of my time this far in the armed forces, though that job was greatly
+              rewarding in it's own way, I decided it was time for change. With a passion for problem solving,
+              and creation, there were a few options that really stood out. Software Engineering and Design.
+              Through this, I discovered a new passion of seemingly limitless possibilities. The limitations with this
+              work
+              are few and far between and seem to only be limited by my own imagination.
+              I look forward to the challenges ahead of me, as I move forward in this new direction in life.
+            </p>
+            <h4>Skills</h4>
+            <table class="skills">
+              <tr>
+                <th>Coding</th>
+                <th>UI/UX</th>
+              </tr>
+              <tr>
+                <td>Full Stack Web Development</td>
+                <td>User Experience Design</td>
+              </tr>
+              <tr>
+                <td>HTML5 / CSS3</td>
+                <td>User Research</td>
+              </tr>
+              <tr>
+                <td>Node JS, React JS</td>
+                <td>Information Architecture</td>
+              </tr>
+              <tr>
+                <td>Javascript / jQuery</td>
+                <td>Interaction Design</td>
+              </tr>
+              <tr>
+                <td>AJAX</td>
+                <td>Visual Design & Information Design</td>
+              </tr>
+              <tr>
+                <td>MERN Stack, Handlebars JS</td>
+                <td>Usability Evaluation</td>
+              </tr>
+              <tr>
+                <td>Java back end coding</td>
+                <td>Usability Testing</td>
+              </tr>
+              <tr>
+                <td>MySQL, MongoDB, Express</td>
+              </tr>
+            </table>
+            <h4>Education</h4>
+            <table class="education">
+              <tr>
+                <th>Monash University</th>
+              </tr>
+              <tr>
+                <td>Coding Bootcamp</td>
+              </tr>
+              <tr>
+                <td>Full Stack Development</td>
+              </tr>
+              <table>
+                <tr>
+                  <th>PeakXD Academy</th>
+                </tr>
+                <tr>
+                  <td>UX Accelerator Program</td>
+                </tr>
+                <tr>
+                  <td>User Experience Design</td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>Coursera</th>
+                </tr>
+                <tr>
+                  <td>CalArts - UI/UX Design Specialization</td>
+                </tr>
+              </table>
+              <h4>Work</h4>
+              <table class="work">
+                <tr>
+                  <th>NZ Army 2013 - 2020</th>
+                </tr>
+                <tr>
+                  <td>Team Leader - Heavy Diesel Mechanic</td>
+                </tr>
+              </table>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary cvBtn" href="Assets/images/R.PatersonCV.png" download>Download CV</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"></script>
+    <script src="Assets/script/script.js"></script>
+  </body>
+
+</html>
