@@ -170,6 +170,20 @@ h4 {
   width: 736px;
 }
 
+.alternateContact {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  padding: 8px;
+  color: rgb(65, 65, 65);
+}
+.alternateContact p {
+  margin-bottom: 0;
+}
+.alternateContact h5 {
+  margin-bottom: 8px;
+}
+
 .submit-form {
   position: absolute;
   bottom: 24px;
@@ -208,5 +222,11 @@ h4 {
 .view-three {
   position: absolute;
   bottom: 32px;
-  left: 32px;
+  left: 16px;
+}
+
+.repo-link {
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
 }
