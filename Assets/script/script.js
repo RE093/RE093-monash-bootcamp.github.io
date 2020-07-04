@@ -20,6 +20,17 @@ nextButton.addEventListener( 'click', function() {
   rotateCarousel();
 });
 
+
+let mobile = window.matchMedia("(max-width: 415px)")
+
+function messageBox() {
+  if (mobile.matches) {
+    $(".formText").attr("rows", "2")
+  }
+};
+
+messageBox();
+
 $(document).ready(function() {
   $("#MyModal").modal();
 });
