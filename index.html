@@ -5,275 +5,289 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rupert Paterson</title>
+
     <!-- Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/style/style.css" />
-    <link rel="stylesheet" href="Assets/style/response.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Assets/style/style.css">
   </head>
 
   <body>
-    <div class="scene">
-      <div class="carousel">
-        <!-- About Me -->
-        <div class="carousel__cell about">ABOUT
-          <section class="about-text">
-            <img class="about-image" alt="Rupert's face" src="Assets/images/re-face2.png">
-            <h1>
-              RUPERT
-              <br>
-              <span>PATERSON</span>
-            </h1>
-            <p>
-              I am a full-stack developer and UI/UX designer.
-              <br>
-              I do not just stop at learning one element, I strive to learn the entirety of a product development process.
-              Currently I am doing a coding bootcamp through Monash University and a UX bootcamp through PeakXD.
-              <br>
-              With a background of seven years in the New Zealand Army as a heavy diesel mechanic, I developed a tenacity
-              for hard work and determination,
-              which I use to full effect when learning new skills.
-              My passion for problem solving has taught me to never shy away from a challenge, to learn new skills and
-              build on those I already had.
-              Skills like team building, communication and public speaking all became second nature after being put in
-              high pressure situations in my profession this far.
-            </p>
-            <button type="button" class="read-more btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Read
-              More</button>
-          </section>
+    <nav class="navbar navbar-expand-lg stick-link sticky-top">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav list-item">
+          <a class="nav-item nav-link" href="#about">ABOUT</a>
+          <a class="nav-item nav-link" href="#work">UI/UX</a>
+          <a class="nav-item nav-link" href="#resume">CODE</a>
+          <a class="nav-item nav-link" href="#skills">SKILLS</a>
         </div>
-        <!-- Contact -->
-        <div class="carousel__cell contact">CONTACT
-          <section class="contact-form">
-            <span><a target="_blank" href="https://www.linkedin.com/in/rupert-paterson-2b2b02165/"><img id="linkedin"
-                  src="Assets/images/linkedin.png" alt="linkedin link" /></a></span>
-            <span><a target="_blank" href="https://github.com/RE093"><img id="github" src="Assets/images/github.png"
-                  alt="github Link" /></a></span>
-            <form>
-              <div action="mailto:rupert.rotary@gmail.com" method="post" enctype="text/plain"
-                class="form-group input-form">
-                <label class="form-title">Name</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group input-form">
-                <label class="form-title">Email</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group input-form">
-                <label class="form-title">Message</label>
-                <textarea type="text" class="form-control formText" rows="5"></textarea>
-              </div>
-              <section class="alternateContact">
-                <h6>Alternatively you can reach me on either,</h6>
-                <p>Email: re.paterson000@gmail.com</p>
-                <p>Cell: 0411 630 535</p>
-              </section>
-              <button class="btn btn-primary submit-form" type="submit">Submit</button>
-            </form>
-          </section>
+        <div class=" contact-me dropdown nav-link nav-item">
+          <a class=" contact-btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            CONTACT
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item  phone" href="#" data-toggle="tooltip" data-placement="left" title="0411 630 535"><img class="contact-links" src="Assets/images/contact/phone.png">Phone</a>
+            <a class="dropdown-item  email" data-toggle="tooltip" data-placement="left" title="Opens a new email" href="mailto:re.paterson000@gmail.com"><img class="contact-links" src="Assets/images/contact/email.png">Email</a>
+            <a class="dropdown-item github" data-toggle="tooltip" data-placement="left" title="Opens my Github in a new tab" target="_blank" href="https://github.com/RE093"><img class="contact-links" src="Assets/images/contact/github.png">Github</a>
+            <a class="dropdown-item linked" data-toggle="tooltip" data-placement="left" title="Opens my Linkedin in a new tab" target="_blank" href="https://www.linkedin.com/in/rupert-paterson-2b2b02165/"><img class="contact-links" src="Assets/images/contact/linkedin.png">Linkedin</a>
+            <a class="dropdown-item  cv" data-toggle="tooltip" data-placement="left" title="Downloads my resume" href="Assets/images/R.PatersonCV.png"><img class="contact-links" src="Assets/images/R.PatersonCV.png" download>Resume</a>
+          </div>
         </div>
-        <!-- Portfolio -->
-        <div class="carousel__cell portfolio">PORTFOLIO
-          <section class="portfolio-cards">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm row-one">
-                  <div class="card">
-                    <img src="Assets/images/planner.png" class="card-img-top" alt="work day scheduler screenshot">
-                    <div class="card-body">
-                      <h5 class="card-title">Work Day Scheduler</h5>
-                      <p class="card-text">A simple work day scheduler to plan your day. you can add any text,
-                        save it, its gives you current time and date and where that is on the scheduler.
-                      </p>
-                      <a target="_blank" href="https://re093.github.io/HW5_RPaterson_WorkDayScheduler/"
-                        class="btn btn-primary view-one">Deployed</a>
-                      <a target="_blank" href="https://github.com/RE093/HW5_RPaterson_WorkDayScheduler"
-                      class="repo-link btn btn-primary">Repo</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm row-two">
-                  <div class="card">
-                    <img src="Assets/images/project-one.png" class="card-img-top" alt="a better time screenshot">
-                    <div class="card-body">
-                      <h5 class="card-title">A Better Time</h5>
-                      <p class="card-text">A Better Time gives the user options for what to do on a date night, the first
-                        project,
-                        utilizing github to co-locate files to effectively work with a team of four.
-                      </p>
-                      <a target="_blank" href="https://re093.github.io/a-better-time/"
-                        class="btn btn-primary view-two">Deployed</a>
-                      <a target="_blank" href="https://github.com/RE093/a-better-time"
-                        class="repo-link btn btn-primary">Repo</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm row-three">
-                  <div class="card">
-                    <img src="Assets/images/weather-dash.png" class="card-img-top" alt="weather dashboard screenshot">
-                    <div class="card-body">
-                      <h5 class="card-title">Weather Dashboard</h5>
-                      <p class="card-text">The weather dashboard uses the weather API to give current weather status in
-                        the city you choose,
-                        it saves your history and gives you a five day weather forecast.
-                      </p>
-                      <a target="_blank" href="https://re093.github.io/HW6_MU_RPaterson_Weather-Dashboard/"
-                        class="btn btn-primary view-three">Deployed</a>
-                      <a target="_blank" href="https://github.com/RE093/HW6_MU_RPaterson_Weather-Dashboard"
-                      class="repo-link btn btn-primary">Repo</a>
-                    </div>
+        <a href="#about"><img src="Assets/images/re-logo2.png" id="logo"></a>
+      </div>
+    </nav>
+
+    <div id="about">
+      <h1>Hi, I'm Rupert Paterson</h1>
+      <p><span id="design"></span><span id="line">|</span></p>
+      <img id="code-image" src="Assets/images/vscodescr.png">
+      <img id="re-face" src="Assets/images/re-face2.png">
+      
+      <div id="quote-box">
+        <p id="quote">Good design is silent, but bad coding yells at you. I invest time
+          to design well and ensure the small details of the code stand out for the right reasons.</p>
+      </div>
+      <!-- <a href="#work" id="down-arrowOne"><img src="Assets/images/down-arrow.png"></a> -->
+    </div>
+
+    <div id="work">
+        <h1 data-aos="fade-left" id="ux-title">UI/UX</h1>
+        <div class="container-fluid">
+          <div class="row">
+              <div class=" col-12 d-flex flex-wrap justify-content-center">
+                <div id="containerOne">
+                  <div id="innerOne">
+                    <div id="image-overlay">PeakXD RSL Art Union Project</div>
+                    <div id="content-inside"><img id="rsl-image" src="Assets/images/rslproject.png"></div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-          <div class="mobile-portfolio">
-            <div class="mob-planner">
-              <img src="Assets/images/planner.png" class="folio-image" alt="work day scheduler screenshot">
-              <h5>Work Day Scheduler</h5>
-              <p>A simple work day scheduler to plan your day.</p>
-              <a target="_blank" href="https://re093.github.io/HW5_RPaterson_WorkDayScheduler/"
-                class="btn btn-primary btn-sm">Deployed</a>
-              <a target="_blank" href="https://github.com/RE093/HW5_RPaterson_WorkDayScheduler"
-              class="btn btn-primary btn-sm">Repo</a>
-            </div>
-            <!--  -->
-            <div class="mob-time">
-              <img src="Assets/images/project-one.png" class="folio-image" alt="a better time screenshot">
-              <h5>A Better Time</h5>
-              <p class="card-text">A Better Time gives the user options for what to do on a date night.
-              </p>
-              <a target="_blank" href="https://re093.github.io/a-better-time/"
-                class="btn btn-primary btn-sm">Deployed</a>
-              <a target="_blank" href="https://github.com/RE093/a-better-time"
-                class="btn btn-primary btn-sm">Repo</a>
-            </div>
-            <div class="mob-weather">
-              <img src="Assets/images/weather-dash.png" class="folio-image" alt="weather dashboard screenshot">
-              <h5>Weather Dashboard</h5>
-              <p>The weather dashboard gives you current weather and a five day forecast.
-              </p>
-              <a target="_blank" href="https://re093.github.io/HW6_MU_RPaterson_Weather-Dashboard/"
-                class="btn btn-primary btn-sm port-btn">Deployed</a>
-              <a target="_blank" href="https://github.com/RE093/HW6_MU_RPaterson_Weather-Dashboard"
-              class="btn btn-primary btn-sm port-btn">Repo</a>
-            </div>
+          </div>
+        </div>
+        <!-- <a href="#resume" id="down-arrowTwo"><img src="Assets/images/down-arrow.png"></a> -->
+    </div>
+
+    <div id="resume">
+      <h1 data-aos="fade-right" id="code-title">Code</h1>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-12 d-flex flex-wrap justify-content-center">
+                <div id="containerTwo">
+                  <div id="innerTwo">
+                    <div id="image-overlay">A Better Time</div>
+                    <div id="content-inside"><img id="better-image" src="Assets/images/project-one.png"></div>
+                  </div>
+                </div>
+                <div id="containerThree">
+                  <div id="innerThree">
+                    <div id="image-overlay">Weather Dashboard</div>
+                    <div id="content-inside"><img id="weather-image" src="Assets/images/weather-dash.png"></div>
+                  </div>
+                </div>
+                <div id="containerFour">
+                  <div id="innerFour">
+                    <div id="image-overlay">Workday Schedular</div>
+                    <div id="content-inside"><img id="workday-image" src="Assets/images/planner.png"></div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Next/ Previous -->
-    <div class=prevNext>
-      <button class="previous-button btn btn-dark">Previous</button>
-      <button class="next-button btn btn-dark">Next</button>
+
+    <div id="skills">
+      <div id="skills-images">
+        <img id="skill-one" src="Assets/images/skills/skills.png">
+        <img id="skill-two" src="Assets/images/skills/education.png">
+      </div>
+      <h1 data-aos="fade-left" id="skills-title">Skills</h1>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <!-- Modal for projects -->
+
+    <!-- A Better Time -->
+    <div class="modal fade better-modal" id="better-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog .modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title" id="staticBackdropLabel">RUPERT PATERSON</h1>
+            <h5 class="modal-title" id="exampleModalLabel">A Better Time
+            </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <h4>Profile</h4>
-            <img src="Assets/images/re-mountain.jpeg" class="about-imageTwo" alt="rupert on mount oberon">
-            <p>
-              I have spent the majority of my time this far in the armed forces, though that job was greatly
-              rewarding in it's own way, I decided it was time for change. With a passion for problem solving,
-              and creation, there were a few options that really stood out. Software Engineering and Design.
-              Through this, I discovered a new passion of seemingly limitless possibilities. The limitations with this
-              work
-              are few and far between and seem to only be limited by my own imagination.
-              I look forward to the challenges ahead of me, as I move forward in this new direction in life.
-            </p>
-            <h4>Skills</h4>
-            <table class="skills">
-              <tr>
-                <th>Coding</th>
-                <th>UI/UX</th>
-              </tr>
-              <tr>
-                <td>Full Stack Web Development</td>
-                <td>User Experience Design</td>
-              </tr>
-              <tr>
-                <td>HTML5 / CSS3</td>
-                <td>User Research</td>
-              </tr>
-              <tr>
-                <td>Node JS, React JS</td>
-                <td>Information Architecture</td>
-              </tr>
-              <tr>
-                <td>Javascript / jQuery</td>
-                <td>Interaction Design</td>
-              </tr>
-              <tr>
-                <td>AJAX</td>
-                <td>Visual Design & Information Design</td>
-              </tr>
-              <tr>
-                <td>MERN Stack, Handlebars JS</td>
-                <td>Usability Evaluation</td>
-              </tr>
-              <tr>
-                <td>Java back end coding</td>
-                <td>Usability Testing</td>
-              </tr>
-              <tr>
-                <td>MySQL, MongoDB, Express</td>
-              </tr>
-            </table>
-            <h4>Education</h4>
-            <table class="education">
-              <tr>
-                <th>Monash University</th>
-              </tr>
-              <tr>
-                <td>Coding Bootcamp</td>
-              </tr>
-              <tr>
-                <td>Full Stack Development</td>
-              </tr>
-              <table>
-                <tr>
-                  <th>PeakXD Academy</th>
-                </tr>
-                <tr>
-                  <td>UX Accelerator Program</td>
-                </tr>
-                <tr>
-                  <td>User Experience Design</td>
-                </tr>
-              </table>
-              <table>
-                <tr>
-                  <th>Coursera</th>
-                </tr>
-                <tr>
-                  <td>CalArts - UI/UX Design Specialization</td>
-                </tr>
-              </table>
-              <h4>Work</h4>
-              <table class="work">
-                <tr>
-                  <th>NZ Army 2013 - 2020</th>
-                </tr>
-                <tr>
-                  <td>Team Leader - Heavy Diesel Mechanic</td>
-                </tr>
-              </table>
+            <p> A collaborative project working with team members, utilizing AJAX to retrieve data from API's and 
+              populating that data based on user preference to the page. My role in this was predominantly the HTML/ CSS, but also
+              did some work populating the data using AJAX requests.</p>
+            <ul>
+              <li>HTML/ CSS</li>
+              <li>Javascript/ jQuery</li>
+              <li>Bootstrap</li>
+              <li>AJAX</li>
+            </ul>
           </div>
           <div class="modal-footer">
-            <a class="btn btn-primary cvBtn" href="Assets/images/R.PatersonCV.png" download>Download CV</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a target="_blank" href="https://github.com/RE093/a-better-time" type="button" class="btn btn-dark" href="#">Github</a>
+            <a target="_blank" href="https://re093.github.io/a-better-time/" type="button" class="btn btn-dark" href="#">Deployed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weather Dashboard -->
+    <div class="modal fade weather-modal" id="weather-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog .modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Weather Dashboard
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>A simple weather data app, the user can choose a location using the search and using AJAX and a weather API it will generate the current weather and a 
+              five day forecast, the user can then change the location and the previous location will be saved on the left using local storage, which
+              can be re-accessed later. </p>
+            <ul>
+              <li>HTML/ CSS</li>
+              <li>Javascript/ jQuery</li>
+              <li>Bootstrap</li>
+              <li>AJAX</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a target="_blank" href="https://github.com/RE093/HW6_MU_RPaterson_Weather-Dashboard" type="button" class="btn btn-dark" href="#">Github</a>
+            <a target="_blank" href="https://re093.github.io/HW6_MU_RPaterson_Weather-Dashboard/" type="button" class="btn btn-dark" href="#">Deployed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workday Schedular -->
+    <div class="modal fade workday-modal" id="workday-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog .modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Workday Schedular
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>A work day schedular, it uses moment.js to get the current time and date on top, it then uses that data to change the colors of the 
+              the time on the left. grey being the past, blue the present and green the future. The user can save their data using local storage.</p>
+            <ul>
+              <li>HTML/ CSS</li>
+              <li>Javascript/ jQuery</li>
+              <li>Bootstrap</li>
+              <li>momentJS</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a target="_blank" href="https://github.com/RE093/HW5_RPaterson_WorkDayScheduler" type="button" class="btn btn-dark" href="#">Github</a>
+            <a target="_blank" href="https://re093.github.io/HW5_RPaterson_WorkDayScheduler/" type="button" class="btn btn-dark">Deployed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PeakXD UX Project -->
+    <div class="modal rsl-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">PeakXD RSL Art Union Project</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Assets/images/rsl_presentation/screen1.png" class="d-block w-100" alt="Intro">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen2.png" class="d-block w-100" alt="Scope">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen3.png" class="d-block w-100" alt="Problem">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen4.png" class="d-block w-100" alt="priorities">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen5.png" class="d-block w-100" alt="measuring success">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen6.png" class="d-block w-100" alt="hypothesis">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen7.png" class="d-block w-100" alt="personas">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen8.png" class="d-block w-100" alt="interviews">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen9.png" class="d-block w-100" alt="expert review">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen10.png" class="d-block w-100" alt="ia">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen11.png" class="d-block w-100" alt="userflow">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen12.png" class="d-block w-100" alt="wireframe">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen13.png" class="d-block w-100" alt="testing">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/images/rsl_presentation/screen14.png" class="d-block w-100" alt="result">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -291,6 +305,15 @@
       integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
       crossorigin="anonymous"></script>
     <script src="Assets/script/script.js"></script>
-  </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <script>
+      AOS.init({
+          offset: 400,
+          delay: 0,
+          duration: 1000
+      });
+    </script>
+
+  </body>
 </html>
