@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
   background-color: rgb(26, 25, 25);
@@ -18,9 +20,13 @@ html {
 #contact,
 #skills {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   padding: 48px;
   background-color: rgb(31, 30, 30);
+}
+#about,
+#work {
+  height: 100vh;
 }
 
 #about {
@@ -30,8 +36,9 @@ html {
 #about h1 {
   color: rgb(128, 127, 127);
   font-size: 60px;
-  font-family: 'Saira Semi Condensed', sans-serif;
+  font-family: "Saira Semi Condensed", sans-serif;
   margin-left: 32px;
+  margin-top: 400px;
   z-index: 999;
 }
 #about p {
@@ -49,7 +56,7 @@ html {
 #work {
   display: flex;
   justify-content: center;
-  align-items: center;   
+  align-items: center;
   margin: 0;
 }
 
@@ -74,7 +81,7 @@ html {
 
 .nav-item {
   color: rgb(128, 127, 127) !important;
-  font-family: 'Saira Semi Condensed', sans-serif;
+  font-family: "Saira Semi Condensed", sans-serif;
   font-size: 20px;
   font-weight: bold;
   margin-right: 32px;
@@ -88,17 +95,16 @@ html {
 }
 
 .dropdown-menu {
-  background-color: rgb(31, 30, 30);
-  color: #EDEDED;
+  background-color: rgba(31, 30, 30) !important;
+  color: #ededed;
   border: none;
 }
 .dropdown-item {
-  background-color: rgb(31, 30, 30);
+  background-color: rgba(31, 30, 30);
   color: rgb(128, 127, 127);
 }
 .dropdown-item img {
   position: relative;
-  ;
 }
 
 .dropdown-item:hover {
@@ -119,20 +125,22 @@ html {
 }
 
 .contact-btn {
-  background-color: rgb(31, 30, 30);
+  background-color: rgba(31, 30, 30);
   font-weight: bold;
   font-size: 20px;
   border: none;
   color: rgb(128, 127, 127);
 }
 .contact-btn:hover {
-  background-color: rgb(31, 30, 30);
+  background-color: rgba(31, 30, 30);
 }
 .contact-btn:active {
-  background-color: rgb(31, 30, 30) !important;
+  background-color: rgba(31, 30, 30) !important;
+  border: none;
 }
 .contact-btn:focus {
-  background-color: rgb(31, 30, 30) !important;
+  background-color: rgba(31, 30, 30) !important;
+  border: none;
 }
 
 #quote-box {
@@ -146,7 +154,7 @@ html {
   text-align: left;
   color: rgb(128, 127, 127);
   /* font-style: italic; */
-  font-family: 'Saira Semi Condensed', sans-serif;
+  font-family: "Saira Semi Condensed", sans-serif;
   font-size: 2rem !important;
   /* font-weight: 300; */
 }
@@ -154,12 +162,12 @@ html {
 #design,
 #line {
   /* font-style: italic; */
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 2rem !important;
   color: rgb(212, 212, 212);
 }
 #code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: 2rem !important;
   color: rgb(128, 127, 127);
 }
@@ -204,28 +212,33 @@ html {
   margin: 10px 24px 10px 0px;
 }
 
-
 /* ---------------------------------------------------------------------- */
 
 #containerOne,
 #containerTwo,
 #containerThree,
-#containerFour {
-    perspective: 40px;
+#containerFour,
+#containerFive,
+#containerSix,
+#containerSeven {
+  perspective: 40px;
 }
 
 #innerOne,
 #innerTwo,
 #innerThree,
-#innerFour {
-    width: 30em;
-    height: 30em;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 4px;
-    transition: transform 0.3s;
-    margin: 15px;
-    box-shadow:2px 2px 2px rgb(197, 197, 197);
-    position: relative;
+#innerFour,
+#innerFive,
+#innerSix,
+#innerSeven {
+  width: 30em;
+  height: 30em;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  transition: transform 0.3s;
+  margin: 15px;
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
+  position: relative;
 }
 
 #rsl-image {
@@ -247,14 +260,14 @@ html {
   padding-top: 15px;
 }
 #innerOne:hover #image-overlay {
-  box-shadow:2px 2px 2px rgb(197, 197, 197);
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
   background-color: rgba(255, 255, 255, 1);
 }
 
 .size {
-    width: 70vw;
-    height: 30vh;
-    margin-top: 20px;
+  width: 70vw;
+  height: 30vh;
+  margin-top: 20px;
 }
 
 #work {
@@ -285,42 +298,51 @@ html {
 }
 #containerTwo,
 #containerThree,
-#containerFour {
+#containerFour,
+#containerFive,
+#containerSix,
+#containerSeven {
   margin-top: 200px;
 }
+
 #innerTwo:hover #image-overlay {
-  box-shadow:2px 2px 2px rgb(197, 197, 197);
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
 }
 #innerThree:hover #image-overlay {
-  box-shadow:2px 2px 2px rgb(197, 197, 197);
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
 }
 #innerFour:hover #image-overlay {
-  box-shadow:2px 2px 2px rgb(197, 197, 197);
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
+}
+#innerFive:hover #image-overlay {
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
+}
+#innerSix:hover #image-overlay {
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
+}
+#innerSeven:hover #image-overlay {
+  box-shadow: 2px 2px 2px rgb(197, 197, 197);
 }
 
 #containerTwo:hover,
 #containerThree:hover,
-#containerFour:hover {
+#containerFour:hover,
+#containerFive:hover,
+#containerSix:hover,
+#containerSeven:hover {
   cursor: pointer;
 }
 
 #better-image,
-#weather-image,
-#workday-image {
+#beredy-image,
+#burger-image,
+#employee-image,
+#note-image,
+#team-image {
   height: 100%;
   width: 100%;
   border-radius: 4px;
 }
-
-/* #down-arrowThree:hover {
-  opacity: 1;
-}
-
-#down-arrowThree img {
-  position: relative;
-  left: 50%;
-  bottom: 164px;
-} */
 
 /* Skills --------------------------------------------- */
 
@@ -347,9 +369,52 @@ html {
 
 #skills h1 {
   position: absolute;
+  bottom: 650px;
+
   top: 16px;
   right: 128px;
   font-size: 300px;
   color: rgb(128, 127, 127);
   z-index: 0;
 }
+
+#scroll {
+  display: none;
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+#skills-title-mobile,
+#ux-title-mobile,
+#code-title-mobile {
+  display: none;
+}
+
+/* mobile */
+/* #accordionMobile {
+  display: none;
+}
+.accordion {
+  display: none;
+}
+#scroll {
+  display: none;
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+#ux-title-mobile {
+  display: none;
+}
+
+#code-title-mobile {
+  display: none;
+} */
