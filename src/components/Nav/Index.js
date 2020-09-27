@@ -8,7 +8,7 @@ import "./style.css";
 
 function Index() {
   const history = useHistory();
-  const { setContactTimer } = useContext(ContactContext);
+  const [contactTimer, setContactTimer ] = useContext(ContactContext);
 
   const handleClick = () => {
     history.push('/')
@@ -16,11 +16,12 @@ function Index() {
 
   const handleContactClick = () => {
     setContactTimer(true)
+    console.log(contactTimer)
   }
 
     return (
         <>
-          <Navbar  className="navBar">
+          <Navbar className="navBar">
             <Navbar.Brand 
               href="#"
               onClick={handleClick}
