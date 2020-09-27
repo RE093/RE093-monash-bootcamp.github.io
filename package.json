@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://RE093.github.io/RE093.github.io",
+  "homepage": "http://RE093.github.io/",
   "eslintConfig": {
     "extends": "react-app"
   },
