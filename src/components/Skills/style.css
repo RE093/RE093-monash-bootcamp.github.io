@@ -1,0 +1,29 @@
+.skills-images {
+    height: 128px;
+    width: auto;
+    margin: 8px 30px;
+}
+
+.node {
+    height: 90px;
+}
+
+.express {
+    height: 100px;
+}
+
+.photoshop {
+    height: 170px;
+}
+
+.illustrator {
+    height: 138px;
+}
+
+.after-effects {
+    height: 133px;
+}
+
+.icons {
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+#re-logo {
+    height: 32px;
+    width: 32px;
+    margin-left: 32px;
+}
+
+#re-logo:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.nav-contact {
+    position: absolute;
+    right: 32px;
+    top: 16px;
+    color: #262626;
+}
+
+.nav-contact:hover {
+    color: #918e8e;
+    cursor: pointer;
+}
+
+.navBar {
+    box-shadow: 4px 2px 4px 1px #e4e3e3;
+}
+
+.contactButton {
+    font-size: 18px;
+    color: #262626;
+}

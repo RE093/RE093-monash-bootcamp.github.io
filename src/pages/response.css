@@ -1,0 +1,243 @@
+@media screen and (max-width: 1640px) {
+    .car-gif {
+        width: 600px !important;
+        margin-left: 32px;
+        position: relative;
+    }
+    .about h1 {
+        font-size: 115px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .firstNameContainer {
+        right: 32px;
+        top: 500px;
+        height: 1100px;
+        padding: 24px;
+        width: 600px;
+    }
+
+    .firstName {
+        font-size: 115px;
+    }
+    .lastName {
+        font-size: 86px;
+    }
+
+    .firstNameContainer p {
+        margin-top: 220px;
+        font-size: 24px;
+    }
+
+    .about h1 {
+        font-size: 115px;
+    }
+
+    #car-gif {
+        width: 500px;
+        margin-left: 64px;
+        position: relative;
+    }
+
+    .projects h1 {
+        font-size: 115px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .firstNameContainer {
+        right: 32px;
+        top: 600px;
+        height: 800px;
+        width: 600px;
+    }
+
+    .firstName {
+        font-size: 115px;
+    }
+    .lastName {
+        font-size: 86px;
+    }
+
+    .firstNameContainer p {
+        margin-top: 110px;
+        font-size: 20px;
+    }
+
+    .about h1 {
+        font-size: 80px;
+        text-align: left;
+        margin-left: 32px;
+    }
+
+    .car-gif {
+        width: 350px !important;
+        margin-left: 32px;
+        position: relative;
+    }
+
+    .projects {
+        font-size: 90px;
+        text-align: center;
+        margin-left: -84px;
+    }
+
+    .skills-section h1 {
+        font-size: 100px;
+        text-align: center;
+        margin-left: -84px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #re-mountain {
+        height: 500px;
+        margin-top: -80px;
+    }
+
+    .firstNameContainer {
+        right: 32px;
+        top: 300px;
+        height: 800px;
+        width: 450px;
+    }
+    .firstNameContainer p {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .firstName {
+        font-size: 84px;
+    }
+
+    .lastName {
+        font-size: 64px;
+    }
+    
+    .about h1 {
+        font-size: 60px;
+        margin-left: 8px;
+    }
+
+    .car-gif {
+        width: 250px !important;
+    }
+
+    .projects h1 {
+        margin-top: 100px;
+        font-size: 84px;
+    }
+
+    .project-button {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    #re-mountain {
+        width: 100vw;
+        height: auto;
+        margin-top: -90px;
+        overflow: hidden;
+    }
+
+    .firstNameContainer {
+        position: relative;
+        margin: 0 auto;
+        top: 16px;
+        right: 0;
+        width: 100vw;
+    }
+    .firstNameContainer p {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .firstName {
+        font-size: 84px;
+    }
+
+    .lastName {
+        font-size: 64px;
+    }
+    
+    .about h1 {
+        display: none;
+    }
+
+    #car-gif {
+        margin: 16px auto;
+        width: 100vw;
+    }
+
+    .projects {
+        margin-top: -20px;
+        font-size: 60px;
+        margin-left: 0px;
+    }
+
+    .skills-section h1 {
+        font-size: 60px; 
+    }
+
+    .nzdf-image,
+    .peak-image,
+    .monash-image {
+        float: right !important;
+    }
+    .work-list {
+        position: relative;
+        margin-left: 0px !important;
+    }
+
+    .project-button {
+        margin-top: -140px;
+    }
+
+    /* Contact Info ####################################*/
+    .contact-info h1 {
+        font-size: 14px !important;
+        margin-left: -8px;
+        margin-top: -4px;
+    }
+
+    .popup-container {
+        right: 8px !important;
+    }
+
+    .contact-popup {
+        height: 230px !important;
+        width: 350px !important;
+    }
+
+    .close-popup {
+        display: block !important;
+    }
+
+    .email-img,
+    .github-img,
+    .linkedin-img {
+        height: 16px !important;
+        width: 16px !important;
+        position: absolute;
+        right: 0px;
+    }
+
+    .contact-list {
+        list-style-type: none;
+        margin-left: -48px !important;
+        margin-top: -24px !important;
+    }
+
+    .list-item {
+        margin-bottom: -24px !important;
+    }
+
+    .list-a-tag {
+        color: #161616;
+        font-weight: 400 !important;
+    }
+
+}

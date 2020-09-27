@@ -1,0 +1,144 @@
+#re-mountain {
+    height: 1000px;
+    margin-top: -125px;
+}
+
+.firstName,
+.lastName {
+    font-size: 150px;
+    font-family: 'Bungee Shade', cursive;
+}
+.lastName {
+    font-size: 115px;
+}
+
+.firstNameContainer {
+    position: absolute;
+    right: 64px;
+    top: 500px;
+    height: 1100px;
+    background-color: #0f0053;
+    color: white;
+    padding: 32px;
+    border-radius: 20px;
+    margin-bottom: 270px;
+    width: 800px;
+    overflow: hidden
+}
+
+.firstNameContainer:before {
+    content: '';
+    position: absolute;
+    left: 15%;
+    width: 100%; 
+    height: 200%; 
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.firstNameContainer p {
+    margin-top: 130px;
+    font-size: 28px;
+}
+
+.about {
+    width: 54vw;
+    border-radius: 4px;
+    margin-top: 24px;
+    position: relative;
+}
+.about h1 {
+    font-size: 150px;
+    font-family: 'Bungee Shade', cursive;
+    padding: 8px;
+    text-align: center;
+    color: #0f0053;
+}
+
+.car-gif {
+    width: 600px;
+    margin-left: 170px;
+    position: relative;
+}
+
+.moving-gif {
+    position: relative;
+    animation-name: car;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes car {
+    from {
+        transform: translateX(0%);
+     }
+    to {
+        transform: translateX(400%);
+    }
+}
+
+.project-button {
+    position: absolute;
+    right: 64px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0f0053;
+    padding: 16px 24px;
+    border-radius: 8px;
+}
+
+.project-button:hover {
+    background-color: rgb(56, 56, 179);
+    cursor: pointer;
+}
+
+/* ################################################################################# */
+
+.projects {
+    font-size: 150px;
+    font-family: 'Bungee Shade', cursive;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    color: #0f0053;
+    margin: 0px !important;
+}
+
+.project-examples {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+/* ################################################################################# */
+
+.example-items {
+    justify-content: center;
+}
+
+.skills-section h1 {
+    font-size: 150px;
+    font-family: 'Bungee Shade', cursive;
+    padding: 8px;
+    text-align: center;
+    margin-top: 40px;
+    color: #0f0053;
+}
+
+/* ################################################################################# */
+
+.skills-container {
+    height: 78vh;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}
+
+.skills-cont {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,28 @@
+.work-container {
+    margin-top: 48px;
+}
+
+.nzdf-image {
+    height: 128px;
+    margin-left: 32px;
+    float: left;
+}
+
+.work-list {
+    margin-top: 24px;
+    margin-left: 350px;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.peak-image {
+    height: 70px;
+    margin-left: 32px;
+    float: left;
+}
+
+.monash-image {
+    height: 120px;
+    margin-left: 32px;
+    float: left;
+}

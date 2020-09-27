@@ -1,0 +1,61 @@
+.popup-container {
+    position: fixed;
+    right: 64px;
+    bottom: -10px;
+}
+
+.contact-popup {
+    height: 500px;
+    width: 700px;
+}
+
+.close-popup {
+    display: none;
+    position: absolute;
+    right: 48px;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    color: rgb(39, 39, 131);
+    font-size: 24px;
+}
+
+.popup-container:hover .close-popup {
+    display: block;
+}
+
+.contact-info {
+    position: absolute;
+    top: 24px;
+    left: 28px;
+    color: rgb(39, 39, 131);
+}
+
+.contact-info h1 {
+    font-size: 28px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.email-img,
+.github-img,
+.linkedin-img {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 0px;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin-left: -35px;
+    margin-top: 48px;
+}
+
+.list-item {
+    margin-bottom: 32px;
+}
+
+.list-a-tag {
+    color: #161616;
+    font-weight: bold
+}
