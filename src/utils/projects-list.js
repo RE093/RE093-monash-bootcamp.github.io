@@ -4,8 +4,15 @@ import Employee from "../assets/projects/employee.png";
 import BeRedy from "../assets/projects/project2.png";
 import Fitness from "../assets/projects/fitness.png";
 import Burger from "../assets/projects/burger.png";
+import Dashboard from "../assets/projects/Project3.png";
 
 export default [
+  {
+    name: "Dashboard",
+    image: Dashboard,
+    deployed: "https://re-dashboard.herokuapp.com/",
+    github: "https://github.com/RE093/P3_Dashboard"
+  },
   {
     name: "Be-Redy",
     image: BeRedy,
@@ -17,12 +24,6 @@ export default [
     image: ABetterTime,
     deployed: "https://darren-behan.github.io/a-better-time/",
     github: "https://github.com/RE093/a-better-time"
-  },
-  {
-    name: "Employee Directory",
-    image: Employee,
-    deployed: "https://re093.github.io/HW19_RPaterson_MU_UserDirectory/",
-    github: "https://github.com/RE093/HW19_RPaterson_MU_UserDirectory"
   },
   {
     name: "Fitness Tracker",
